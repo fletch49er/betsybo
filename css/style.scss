@@ -1,0 +1,233 @@
+/*
+*******************************************************************************
+ * File:		style.css
+ * Purpose: mmain style sheet
+ *
+ * Author:	Mark Fletcher
+ * Date:		01.09.2020
+ *
+ * Notes:
+ *
+ * Revision:
+ *		01.09.2020		1st issue.
+ *
+*******************************************************************************
+*/
+/* colour pallette */
+$grey:	#5b6771; /* grey -  #5b6771 */
+$lgrey:	#dddddd; /* lgrey - #dddddd */
+$pink:	#ee7583; /* pink -  #ee7583 */
+$white:	#ffffff; /* white - #ffffff */
+
+$featureFont:			butlerStencil;
+$featureFont-bold:	butlerStencil-bold;
+$mainFont:				openSans;
+$mainFont-bold:		openSans-bold;
+
+$border1: 1px solid $grey;
+
+/* fonts ****************/
+@font-face {
+	font-family: openSans;
+	src: url('../fonts/open_sans_webfont/OpenSans-Regular.woff2') format('woff2'),
+		url('../fonts/open_sans_webfont/OpenSans-Regular.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: openSans-bold;
+	src: url('../fonts/open_sans_webfont/OpenSans-Bold.woff2') format('woff2'),
+		url('../fonts/open_sans_webfont/OpenSans-Bold.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: butlerStencil;
+	src: url('../fonts/butler_stencil_webfont/ButlerStencil.woff2') format('woff2'),
+		url('../fonts/butler_stencil_webfont/ButlerStencil.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: butlerStencil-bold;
+	src: url('../fonts/butler_stencil_webfont/ButlerStencil-Bold.woff2') format('woff2'),
+		url('../fonts/butler_stencil_webfont/ButlerStencil-Bold.woff') format('woff');
+   font-weight: bold;
+   font-style: normal;
+}
+
+/* general styling ****************/
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+body {
+	margin: 0;
+	font-family: $mainFont;
+	color:  $grey;
+}
+
+h1, h2, h3, h4 {
+	font-family: $featureFont-bold;
+}
+h1, h2 {
+	color: $grey;
+	text-align: center;
+}
+h1 {
+	font-size: 28px;
+}
+a:link, a:visited, a:hover {
+	text-decoration: none;
+}
+
+/* header styling ***************/
+#hdr_logo, #header {
+	height: 50px;
+}
+#header, #sub-header {
+	position: relative;
+}
+#header {
+	margin-top: 20px;
+	margin-bottom: 0px;
+	padding: 20px 10px;
+	background-color: $white;
+	border-top: $border1;
+	border-bottom: $border1;
+}
+#sub-header {
+	
+}
+	
+
+#hdr_logo {
+	position: absolute;
+	margin: auto auto;
+}
+
+/* navbar styling ***************/
+#navbar, #sub-navbar {
+	position: absolute;
+	font-family: $mainFont;
+	a:link, a:visited {
+		color: $grey;
+	}
+	a:hover {
+		color: $pink;
+	}
+}
+#navbar {
+	bottom: 10px;
+	right: 20px;
+	font-size: 14px;
+	.seperator {
+		font-weight: bolder;
+		color: $pink;
+	}
+}
+#sub-navbar {
+	right: 20px;
+	bottom: 5px;
+	font-size: 10px;
+}
+
+/* footer styling ***************/
+#footer {
+	position: relative;
+	background-color: $grey;
+	font-family: $mainFont;
+	color: $white;
+}
+#ftr_navbar {
+	font-family: $mainFont;
+	font-size: 14px;
+	position: absolute; 
+	bottom: 10px;
+	right: 20px;
+	.seperator {
+		font-weight: bolder;
+		color: $white;
+	}
+	a:link, a:visited {
+		color: $white;
+	}
+	a:hover {
+		color: $pink;
+	}
+}
+#ftr_logo {
+	 img {
+		padding: 0px 10px;
+		height: 150px;
+	}
+}
+#ftr_address, #copyright {
+	line-height: 150%;
+	padding: 10px 20px 20px 20px;
+}
+#ftr_address {
+	a:link, a:visited {
+		color: $white;
+	}
+	a:hover {
+		color: $pink;
+	}
+}
+#copyright {
+	font-family: $featureFont;
+	margin-bottom: 20px;
+}
+
+/* content styling ***************/
+#wrapper {
+	background-image: url('../images/betsybo_logo10.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100%;
+	margin: 0 40px;
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
+#content {
+	text-align: center;
+}
+
+#products {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-column-gap: 40px;
+}
+.product {
+	background-color: $white;
+	border: $border1;
+	display: inline-block;
+	height: 300px;
+	padding: 5px;
+	font-size: 14px;
+	overflow: hidden;
+}
+.product_img {
+	/* border: $border1; */
+	width: 100%;
+	height: 200px;
+	text-align: center;
+}
+
+.product_data {
+	padding: 10px;
+}
+
+.product_desc, .product_rating, .product_price {
+	text-align: center;
+}
+.product_rating {
+	color: $lgrey;
+}
+.product_price {
+	font-size: 18px;
+	font-weight: bold;
+}

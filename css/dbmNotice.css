@@ -1,0 +1,33 @@
+/*
+*******************************************************************************
+ * File:		dbmNotice.css
+ * Purpose: style sheet for designs by mark footer notice
+ *
+ * Author:	Mark Fletcher
+ * Date:		01.09.2020
+ *
+ * Notes:
+ *
+ * Revision:
+ *		01.09.2020		1st issue.
+ *
+*******************************************************************************
+*/
+/* colour pallette */
+/* blue - #0065bd */
+/* pink - #ee7583 */
+
+/* general styling ****************/
+#dbmNotice {
+  margin: 0 20px;
+  padding: 5px 0;
+  text-align: right;
+	font-size: 10pt;
+}
+#dbmNotice a:link, #dbmNotice a:visited {
+  text-decoration: underline;
+  color: #0065bd; /* blue */
+}
+#dbmNotice a:hover {
+  color: #ee7583; /* pink */
+}
