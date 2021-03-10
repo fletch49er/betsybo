@@ -38,7 +38,7 @@ include_once 'header.php';
 		$stars .= '<i class="fas fa-star" style="color: #ddd;"></i>'.PHP_EOL;
  	}
  	echo $stars;
-?>					
+?>
 						</div><!-- end .product_rating -->
 						<div class="product_price">
 							<span style="font-weight: bolder">&pound</span> Item Price
@@ -51,4 +51,5 @@ include_once 'header.php';
 <?php	endforeach; ?>
 	</div><!-- end #content -->
 </div><!-- end #wrapper -->
+
 <?php include_once 'footer.php'; ?>

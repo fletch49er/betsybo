@@ -1,7 +1,7 @@
 /*
 *******************************************************************************
  * File:		style.css
- * Purpose: mmain style sheet
+ * Purpose: main stylesheet
  *
  * Author:	Mark Fletcher
  * Date:		01.09.2020
@@ -99,9 +99,9 @@ a:link, a:visited, a:hover {
 	border-bottom: $border1;
 }
 #sub-header {
-	
+
 }
-	
+
 
 #hdr_logo {
 	position: absolute;
@@ -144,7 +144,7 @@ a:link, a:visited, a:hover {
 #ftr_navbar {
 	font-family: $mainFont;
 	font-size: 14px;
-	position: absolute; 
+	position: absolute;
 	bottom: 10px;
 	right: 20px;
 	.seperator {

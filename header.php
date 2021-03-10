@@ -14,9 +14,6 @@
  *
 *******************************************************************************
 */
-// Report simple running errors
-error_reporting(E_ERROR | E_WARNING | E_PARSE);
-
 /* include data */
 include_once 'php/data.php';
 
@@ -38,17 +35,18 @@ include_once 'php/functions.php';
 
 	<!-- stylesheets -->
 	<link rel="stylesheet" type="text/css" href="css/style.css"  />
+	<link rel="stylesheet" type="text/css" href="css/policies.css"  />
 	<link rel="stylesheet" type="text/css" href="css/dbmNotice.css"  />
 </head>
 <body>
 	<div id="sub-header">
 		<div id="sub-navbar">
-	<?php $create_navbar($sub_navbar_data, $count, ''); ?>
+<?php create_navbar($sub_navbar_data, $count, ''); ?>
 		</div>
 	</div>
 	<div id="header" class="clearfix">
 		<a href="#"><img id="hdr_logo" src="images/betsybo_logo2.png" alt="Betsybo Logo" /></a>
 		<div id="navbar">
-	<?php $create_navbar($navbar_data, $count, $seperator); ?>
+<?php create_navbar($hdr_navbar_data, $count, SEPERATOR); ?>
 		</div><!-- end #navbar -->
 	</div><!-- end #header -->

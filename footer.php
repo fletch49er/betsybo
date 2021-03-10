@@ -40,21 +40,22 @@
 */
 ?>
 <div id="footer" class="clearfix">
-	<div id="ftr_navbar">
-<?php $create_navbar($navbar_data2, $count, $seperator); ?>
-	</div><!-- end #ftr_navbar -->
 	<div id="ftr_logo">
 		<a href="#"><img src="images/betsybo_logo5.jpg" alt="Betsybo Logo" /></a>
 	</div><!-- end #ftr_logo -->
 	<div id="ftr_address">
 		<address>
-			address, town, postcode<br />
-			<a href="tel:+44">+44 tel-number</a><br />
-			<a href="mailto:enquiry@betsybo.com">enquiry@betsybo.com</a><br />
+			<?php echo COMPANY; ?><br />
+			<?php echo ADDRESS; ?><br />
+			<a href="tel:<?php echo TELEPHONE; ?>">+44 tel-number</a><br />
+			<a href="mailto:<?php echo EMAIL; ?>"><?php echo EMAIL; ?></a><br />
 		</address>
 	</div><!-- end #ftr_address -->
 	<div id=""></div>
-	<div id="copyright">&copy; <?php echo date('Y'); ?> Betsybo. All rights reserved.</div>
+	<div id="copyright"><?php copyright(COMPANY, 2020); ?></div>
+	<div id="ftr_navbar">
+<?php create_navbar($ftr_navbar_data, $count, SEPERATOR); ?>
+	</div><!-- end #ftr_navbar -->
 </div><!-- end #footer -->
 
 <?php include_once('templates/dbmNotice.php'); ?>

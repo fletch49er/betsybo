@@ -1,0 +1,51 @@
+/*
+*******************************************************************************
+ * File:		policies.css
+ * Purpose: stylesheet for policy notifications etc.
+ *
+ * Author:	Mark Fletcher
+ * Date:		19.11.2020
+ *
+ * Notes:
+ *
+ * Revision:
+ *		19.11.2020		1st issue.
+ *
+*******************************************************************************
+*/
+/* colour pallette */
+/* #000 - black */
+/* font sizes */
+/* font1 - 7px */
+/* font2 - 14px */
+/* policy page styling ******************/
+#policy {
+  padding: 0px 20px 20px 20px;
+  text-align: left;
+  font-size: 14px; }
+
+#policy > h2, #policy > h3, #policy > h4,
+#sitemap > h2, #sitemap > h3, #sitemap > h4,
+#policy > ul > li:before, #sitemap > ul > li:before,
+.highlight {
+  color: #000; }
+
+#policy > ul, #sitemap > ul {
+  list-style: none;
+  list-style-position: outside; }
+
+#policy > ul > li:before, #sitemap > ul > li:before {
+  content: '\25A0';
+  /* a square bullet */
+  display: block;
+  position: relative;
+  max-width: 0px;
+  max-height: 0px;
+  left: -10px;
+  top: 2px;
+  font-size: 7px; }
+
+#privacy {
+  float: right; }
+
+/*# sourceMappingURL=policies.css.map */
